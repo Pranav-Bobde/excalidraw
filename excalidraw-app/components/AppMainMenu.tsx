@@ -2,6 +2,7 @@ import {
   loginIcon,
   ExcalLogo,
   eyeIcon,
+  LoadIcon,
 } from "@excalidraw/excalidraw/components/icons";
 import { MainMenu } from "@excalidraw/excalidraw/index";
 import React from "react";
@@ -22,9 +23,15 @@ export const AppMainMenu: React.FC<{
   theme: Theme | "system";
   setTheme: (theme: Theme | "system") => void;
   refresh: () => void;
+  onOpenCollections: () => void;
+  currentDrawingName: string;
+  onRenameDrawing: (name: string) => void;
 }> = React.memo((props) => {
   return (
     <MainMenu>
+      <MainMenu.Item icon={LoadIcon} onSelect={() => props.onOpenCollections()}>
+        My Drawings
+      </MainMenu.Item>
       <MainMenu.DefaultItems.LoadScene />
       <MainMenu.DefaultItems.SaveToActiveFile />
       <MainMenu.DefaultItems.Export />

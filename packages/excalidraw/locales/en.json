@@ -734,5 +734,15 @@
     "spacebar": "Space",
     "delete": "Delete",
     "mmb": "Scroll wheel"
+  },
+  "collections": {
+    "title": "My Drawings",
+    "newDrawing": "New Drawing",
+    "searchPlaceholder": "Search drawings...",
+    "noDrawings": "No drawings yet",
+    "confirmDelete": "Are you sure you want to delete this drawing? This cannot be undone.",
+    "duplicate": "Duplicate",
+    "delete": "Delete",
+    "justNow": "Just now"
   }
 }
